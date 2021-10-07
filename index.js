@@ -1,5 +1,4 @@
-import parser from 'node-html-parser'
-const { parse } = parser
+import { parse } from 'node-html-parser/dist/nodes/html.js'
 import fetch from 'node-fetch'
 
 import metadataRuleSets from './rulesets.js'

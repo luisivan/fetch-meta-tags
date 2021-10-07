@@ -1,6 +1,6 @@
 {
   "name": "fetch-meta-tags",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "Fetch and parse OG tags and metadata from any URL, the fast way",
   "main": "index.js",
   "type": "module",
