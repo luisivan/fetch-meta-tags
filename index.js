@@ -1,4 +1,5 @@
 import parser from 'node-html-parser'
+const { parse } = parser
 import fetch from 'node-fetch'
 
 import metadataRuleSets from './rulesets.js'
@@ -26,7 +27,7 @@ const makeUrlAbsolute = (url, path) =>
 
 export default async function fetchMeta(url) {
   const head = await fetchHead(url)
-  const dom = parser.parse(head)
+  const dom = parse(head)
   const metadata = {
     url,
   }
@@ -45,4 +46,5 @@ export default async function fetchMeta(url) {
       metadata[prop] = makeUrlAbsolute(url, metadataRuleSets[prop].defaultValue)
     }
   }
+  return metadata
 }
