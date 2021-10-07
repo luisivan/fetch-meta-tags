@@ -1,0 +1,29 @@
+{
+  "name": "fetch-meta-tags",
+  "version": "1.0.1",
+  "description": "Fetch and parse OG tags and metadata from any URL, the fast way",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisivan/fetch-meta-tags.git"
+  },
+  "keywords": [
+    "fetch",
+    "metadata",
+    "og"
+  ],
+  "author": "Luis Cuende <me@luisc.xyz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisivan/fetch-meta-tags/issues"
+  },
+  "homepage": "https://github.com/luisivan/fetch-meta-tags#readme",
+  "dependencies": {
+    "node-fetch": "^3.0.0",
+    "node-html-parser": "^4.1.5"
+  }
+}
