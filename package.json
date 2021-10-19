@@ -1,6 +1,6 @@
 {
   "name": "fetch-meta-tags",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Fetch and parse OG tags and metadata from any URL, the fast way",
   "main": "index.js",
   "type": "module",
@@ -24,6 +24,6 @@
   "homepage": "https://github.com/luisivan/fetch-meta-tags#readme",
   "dependencies": {
     "node-fetch": "^3.0.0",
-    "node-html-parser": "^4.1.5"
+    "node-html-parser": "^5.0.0"
   }
 }
