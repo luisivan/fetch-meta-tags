@@ -1,5 +1,4 @@
 import { parse } from 'node-html-parser'
-import fetch from 'node-fetch'
 
 import metadataRuleSets from './rulesets.js'
 
@@ -17,6 +16,9 @@ const fetchHead = async (url) => {
       }
     })
 
+  /*if (!global.fetch) {
+    global.fetch = await import('node-fetch')
+  }*/
   const res = await fetch(url)
   return read(res.body)
 }
