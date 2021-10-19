@@ -1,8 +1,8 @@
 {
   "name": "fetch-meta-tags",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Fetch and parse OG tags and metadata from any URL, the fast way",
-  "main": "index.js",
+  "exports": "./index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
