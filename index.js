@@ -14,6 +14,8 @@ const fetchHead = async (url) => {
           resolve(head)
         }
       }
+
+      resolve(head)
     })
 
   /*if (!global.fetch) {
