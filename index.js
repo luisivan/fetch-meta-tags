@@ -7,7 +7,7 @@ const fetchHead = async (url) => {
     new Promise(async (resolve) => {
       let head = ''
       for await (const chunk of body) {
-        head += chunk.toString()
+        head += Buffer.from(chunk).toString()
 
         if (head.toString().split('</head>')[1] !== undefined) {
           head += `${head.toString().split('</head>')[0]}</head></html>`
