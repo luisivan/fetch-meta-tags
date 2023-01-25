@@ -7,7 +7,7 @@
 
 ## Why
 
-I wanted a way to quickly fetch OG tags from websites and get their title, description, icon and OG image. I found all existing solutions not to be ideal because:
+I wanted a way to quickly fetch OG tags from websites and get their title, description, icon and OG image. I found all existing solutions to not be ideal because:
 
 - They had unnecessary dependencies, increasing bundle size
 - They fetch the whole body of the website, increasing load time
@@ -49,7 +49,7 @@ Outputs:
 
 ## Credits
 
-https://github.com/mozilla/page-metadata-parser for the meta tag ruleset.s
+https://github.com/mozilla/page-metadata-parser for the meta tag rulesets.
 
 ## License
 
