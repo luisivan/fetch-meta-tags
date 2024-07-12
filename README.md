@@ -14,7 +14,7 @@ I wanted a way to quickly fetch OG tags from websites and get their title, descr
 
 `fetch-meta-tags` solves those problems by:
 
-- Having just two dependencies: `node-fetch` and `node-html-parser`. They are both very lightweight libraries and also very fast
+- Having just one dependency: `node-html-parser`. Very lightweight library and also very fast
 - Streaming websites and stopping the HTTP request once `</head>` is received. No need to fetch the whole HTML of the website
 
 ## Installation
@@ -27,12 +27,24 @@ $ yarn add fetch-meta-tags
 $ npm install --save fetch-meta-tags
 ```
 
+For Typescript project you can also use the types package:
+
+```sh
+$ yarn add fetch-meta-tags @types/fetch-meta-tags
+```
+
+```sh
+$ npm install --save fetch-meta-tags @types/fetch-meta-tags
+```
+
 ## Usage
 
 ```js
 import fetchMeta from 'fetch-meta-tags'
 
 await fetchMeta('https://luisc.xyz')
+
+await fetchMeta('https://luisc.xyz', { method: 'GET', cache: 'no-cache' })
 ```
 
 Outputs:

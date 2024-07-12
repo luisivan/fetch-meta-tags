@@ -2,7 +2,7 @@ import { parse } from 'node-html-parser'
 
 import metadataRuleSets from './rulesets.js'
 
-const fetchHead = async (url) => {
+const fetchHead = async (url, requestInit) => {
   const read = async (body) =>
     new Promise(async (resolve) => {
       let head = ''
@@ -18,18 +18,15 @@ const fetchHead = async (url) => {
       resolve(head)
     })
 
-  /*if (!global.fetch) {
-    global.fetch = await import('node-fetch')
-  }*/
-  const res = await fetch(url)
+  const res = await fetch(url, requestInit)
   return read(res.body)
 }
 
 const makeUrlAbsolute = (url, path) =>
   new URL(path, new URL(url).origin).toString()
 
-export default async function fetchMeta(url) {
-  const head = await fetchHead(url)
+export default async function fetchMeta(url, requestInit = {}) {
+  const head = await fetchHead(url, requestInit)
   const dom = parse(head)
   const metadata = {
     url,
