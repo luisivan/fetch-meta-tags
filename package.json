@@ -17,6 +17,12 @@
     "og"
   ],
   "author": "Luis Cuende <me@luisc.xyz>",
+  "contributors": [
+    {
+      "name": "Alessandro Rabitti",
+      "url": "https://github.com/silversonicaxel"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luisivan/fetch-meta-tags/issues"
