@@ -1,6 +1,6 @@
 {
   "name": "fetch-meta-tags",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "Fetch and parse OG tags and metadata from any URL, the fast way",
   "exports": "./index.js",
   "type": "module",
@@ -17,6 +17,12 @@
     "og"
   ],
   "author": "Luis Cuende <me@luisc.xyz>",
+  "contributors": [
+    {
+      "name": "Alessandro Rabitti",
+      "url": "https://github.com/silversonicaxel"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luisivan/fetch-meta-tags/issues"
